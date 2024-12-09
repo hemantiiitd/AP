@@ -18,8 +18,8 @@ public class Main{
         // code to write a file
         FileWriter fileWriter = null;
         try {
-            fileWriter = new FileWriter("test.txt");
-            fileWriter.write("Bc I am making file yeyeye!");
+            fileWriter = new FileWriter("test.txt",true);
+            fileWriter.write("\nBc I am making file yeyeye!");
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
@@ -41,6 +41,6 @@ public class Main{
             System.out.println(e.getMessage());
         }
 
-        file.delete();
+//        file.delete();
     }
 }
